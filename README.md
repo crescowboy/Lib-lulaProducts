@@ -46,6 +46,12 @@ Esta descripción proporciona una visión completa de la estructura de tu proyec
 - Node.js (v14 o superior)
 - npm, yarn, pnpm o bun (gestores de paquetes)
 
+### Clonar el Repositorio
+Clona el repositorio en tu máquina local usando Git:
+
+```bash
+git clone https://github.com/crescowboy/Lib-lulaProducts.git
+```
 ### Instalación de Dependencias
 
 Con npm:
@@ -137,7 +143,6 @@ Visita http://localhost:3000 para ver la aplicación en ejecución.
 
 
 ## Configuración de CI/CD
-## Configuración de CI/CD
 
 ### Configuración de CI/CD en GitHub Actions
 
@@ -164,7 +169,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18.17.0' 
 
       - name: Install dependencies
         run: npm install
@@ -173,9 +178,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to Vercel
-        uses: ampproject/deploy-action@v1
+        uses: amondnet/vercel-action@v20
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} 
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-args: '--prod'
