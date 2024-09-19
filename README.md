@@ -36,7 +36,6 @@ Este proyecto es una aplicación web desarrollada con Next.js, diseñada para mo
   - La lógica de negocio y la gestión de datos se manejan a través de hooks personalizados y servicios, mientras que el estado global se administra mediante el contexto de React.
   - Las interfaces en `src/interfaces` ayudan a mantener el código tipado y más fácil de mantener.
 
-Esta descripción proporciona una visión completa de la estructura de tu proyecto, incluyendo rutas, componentes adicionales y la organización general del código. Puedes ajustarla según las necesidades específicas de tu proyecto.
 
 
 ## Instrucciones de Despliegue y Ejecución Local
